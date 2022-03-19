@@ -1,0 +1,168 @@
+<html>
+
+<head>
+    <title>Login Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        button {
+            background-color: #04AA6D;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 95%
+        }
+
+        .cancelbtn {
+            width: auto;
+            padding: 10px 18px;
+            margin-right: auto;
+            background-color: #f44336;
+        }
+
+        form {
+            border: 3px #f1f1f1;
+        }
+
+        label {
+            margin: 8px 10px;
+        }
+
+        input[type=text],
+        input[type=password] {
+            width: 95%;
+            padding: 12px 20px;
+            margin: 8px 10px 8px 10px;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        input[type=checkbox] {
+            padding: 12px 20px;
+            margin: 8px 10px 8px 10px;
+        }
+
+        button {
+            margin: 8px 10px;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        img.avatar {
+            width: auto;
+            border-radius: 50%;
+        }
+
+        .container {
+            padding: 16px;
+            background-color: gray;
+        }
+
+        .img-container {
+            text-align: center;
+            margin: 24px 0 12px 0;
+        }
+
+        span.psw {
+            float: right;
+            padding-top: 16px;
+            margin-right: 31px;
+        }
+
+        @-webkit-keyframes animatezoom {
+            from {
+                -webkit-transform: scale(0)
+            }
+
+            to {
+                -webkit-transform: scale(1)
+            }
+        }
+
+        @keyframes animatezoom {
+            from {
+                transform: scale(0)
+            }
+
+            to {
+                transform: scale(1)
+            }
+        }
+
+        /* Change styles for span and cancel button on extra small screens */
+        @media screen and (max-width: 300px) {
+            span.psw {
+                display: block;
+                float: none;
+            }
+
+            .navbar a {
+                float: none;
+                display: block;
+            }
+
+        }
+
+        .navbar {
+            width: 100%;
+            background-color: #555;
+            overflow: auto;
+        }
+
+        .navbar a {
+            float: left;
+            padding: 12px;
+            color: white;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .active {
+            background-color: #04AA6D;
+        }
+
+        .navbar a:hover {
+            background-color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="#" class="active">Home</a>
+        <a href="#" class="search">Search</a>
+        <a href="#" class="login">Login</a>
+        <a href="#" class="contact">Contact</a>
+
+    </div>
+    <form>
+        <div class="img-container">
+            <img src="images.png" alt="avatar" class="avatar">
+        </div>
+        <div class="contaainer">
+            <label for="uname"><b>Username</b></label><br>
+            <input type="text" placeholder="Enter username" name="uname" required><br>
+
+            <label for="psw"><b>Password</b></label><br>
+            <input type="password" placeholder="Enter password" name="psw" required>
+            <button type="submit">Login</button><br>
+            <input type="checkbox" checked="checked" name="remember">Remember me
+        </div>
+        <div class="container">
+            <button type="button" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+
+    </form>
+</body>
+
+</html>
